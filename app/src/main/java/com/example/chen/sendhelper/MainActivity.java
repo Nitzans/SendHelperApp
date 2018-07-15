@@ -10,6 +10,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.regex.Pattern;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 String phoneTextValue = phoneEditText.getText().toString();
+                if (!isValidMobile(phoneTextValue)) return;
                 String messageTextValue = messageEditText.getText().toString();
                 String url = "https://api.whatsapp.com/send?phone=972"
                         + phoneTextValue.substring(1) + "&text=" + messageTextValue;
@@ -37,6 +41,22 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    private boolean isValidMobile(String phone) {
+        boolean check=false;
+        if (phone==null || phone.equals("")) return false;
+        if(!Pattern.matches("[a-zA-Z]+", phone)) {
+            if(phone.length() != 10 && phone.charAt(0)!='0') {
+                check = false;
+                Toast.makeText(getApplicationContext(), "This is not a valid number", Toast.LENGTH_SHORT).show();
+            } else {
+                check = true;
+            }
+        } else {
+            check=false;
+        }
+        return check;
     }
 
 
