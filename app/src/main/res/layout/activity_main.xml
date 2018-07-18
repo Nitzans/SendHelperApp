@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/whatsback">
+    android:background="@drawable/whatsback"
+    >
 
     <TextView
         android:id="@+id/phoneTitle"
@@ -88,7 +89,7 @@
         app:layout_constraintStart_toEndOf="@+id/phoneEditText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/send"/>
+        android:background="@drawable/send" />
 
 
 </android.support.constraint.ConstraintLayout>
