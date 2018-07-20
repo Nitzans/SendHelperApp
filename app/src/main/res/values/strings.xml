@@ -2,4 +2,10 @@
     <string name="app_name">SendHelper</string>
     <string name="phone_title">Phone Number:</string>
     <string name="message_title">Your Message:</string>
+
+    <string-array name="patterns">
+        <item>--- No pattern ---</item>
+        <item>שלום, זה בקשר לדירה שפירסמת, האם היא עדיין רלוונטית?</item>
+        <item>שלום, זה בקשר לדירה שפירסמת, האם היא עדיין רלוונטית? והאם היא מרוהטת?</item>
+    </string-array>
 </resources>
