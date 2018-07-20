@@ -8,11 +8,35 @@
     android:background="@drawable/whatsback"
     >
 
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/logo"
+        android:foregroundGravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:background="@drawable/logo"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="500dp"
+        android:layout_marginLeft="300dp"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9"
+        />
+
     <TextView
         android:id="@+id/phoneTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="80dp"
         android:text="@string/phone_title"
         android:textSize="8.5pt"
         android:textColor="@color/colorBlack"
@@ -38,7 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="15dp"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="54dp"
+        android:layout_marginTop="90dp"
         android:digits="1234567890"
         android:inputType="phone"
         android:maxLength="10"
@@ -63,7 +87,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.38" />
+        app:layout_constraintVertical_bias="0.40" />
 
     <EditText
         android:id="@+id/messageEditText"
@@ -84,7 +108,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.49" />
+        app:layout_constraintVertical_bias="0.53" />
 
     <Spinner
         android:id="@+id/spinner"
@@ -92,6 +116,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="0.6dp"
+        android:layout_marginLeft="0.6dp"
         android:entries="@array/patterns"
         android:popupBackground="@color/offwhite"
         android:alpha="0.9"
@@ -100,7 +125,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.65"
-
         />
 
     <Button
@@ -116,7 +140,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.2"
-        android:background="@drawable/clicking" />
+        android:background="@drawable/send_button" />
+
+    <Button
+        android:id="@+id/button_info"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/info"
+        android:layout_gravity="right"
+        />
 
 
 </android.support.constraint.ConstraintLayout>

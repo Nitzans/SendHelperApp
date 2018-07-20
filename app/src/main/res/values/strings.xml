@@ -8,4 +8,5 @@
         <item>שלום, זה בקשר לדירה שפירסמת, האם היא עדיין רלוונטית?</item>
         <item>שלום, זה בקשר לדירה שפירסמת, האם היא עדיין רלוונטית? והאם היא מרוהטת?</item>
     </string-array>
+    <string name="title_activity_about">about</string>
 </resources>

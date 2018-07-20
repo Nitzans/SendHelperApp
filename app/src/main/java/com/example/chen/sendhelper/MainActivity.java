@@ -6,14 +6,11 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.inputmethod.EditorInfo;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.regex.Pattern;
@@ -28,6 +25,15 @@ public class MainActivity extends AppCompatActivity {
         final EditText phoneEditText = (EditText) findViewById(R.id.phoneEditText);
         final EditText messageEditText = (EditText) findViewById(R.id.messageEditText);
 
+        final Button infoButton = findViewById(R.id.button_info);
+        infoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(v.getContext(), About.class);
+                startActivity(i);
+                }
+        });
+
         final Button sendButton = findViewById(R.id.button_id);
         sendButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -40,10 +46,9 @@ public class MainActivity extends AppCompatActivity {
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
                 startActivity(i);
-                // Code here executes on main thread after user presses sendButton
+                // Code here executes on main thread after user presses send_button
             }
         });
-
 
         Spinner spinner = findViewById(R.id.spinner);
         spinner.getBackground().setColorFilter(getResources().getColor(R.color.colorAccent), PorterDuff.Mode.SRC_ATOP);
@@ -60,13 +65,11 @@ public class MainActivity extends AppCompatActivity {
                     messageEditText.setText("");
                 } else {
                     messageEditText.setText(parent.getSelectedItem().toString());
-
                 }
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-
             }
         });
 

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whatsback"
+    tools:context="com.example.chen.sendhelper.About">
+
+
+    <ImageView
+        android:background="@drawable/logo"
+        android:layout_width="250dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:text=
+            "WhatsApi allow you to send WhatsApp messages to people who aren't in your contact list."
+        android:textColor="@color/colorBlack"
+        android:textSize="8pt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:text="Just fill in desire phone number and message, and you will redirect to the conversation."
+        android:textColor="@color/colorBlack"
+        android:textSize="8pt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="250dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:text="Attention: WhatsApp application must be installed on the device and cannot be replaced by this app"
+        android:textColor="@color/colorBlack"
+        android:textSize="8pt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="350dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:text="Created by Chen Arviv and Nitzan Shpigel"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="500dp"
+        android:textAlignment="center"/>
+
+    <!---
+    <Button
+        android:id="@+id/button_back"
+        android:background="@drawable/back"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginRight="8dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        />  -->
+
+
+</android.support.design.widget.CoordinatorLayout>
