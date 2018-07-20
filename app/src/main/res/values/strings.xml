@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SendHelper</string>
+    <string name="app_name">WhatsApi</string>
     <string name="phone_title">Phone Number:</string>
     <string name="message_title">Your Message:</string>
 

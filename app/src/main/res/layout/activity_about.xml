@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/whatsback"
-    tools:context="com.example.chen.sendhelper.About">
+    tools:context="com.example.chen.sendhelper.AboutActivity">
 
 
     <ImageView
@@ -17,34 +17,44 @@
 
     <TextView
         android:text=
-            "WhatsApi allow you to send WhatsApp messages to people who aren't in your contact list."
+            "WhatsApi allows you to send WhatsApp messages to people who aren't in your contact list."
         android:textColor="@color/colorBlack"
         android:textSize="8pt"
         android:layout_width="300dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="18dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
         android:layout_marginTop="150dp"
-        android:textAlignment="center"/>
+        />
 
     <TextView
-        android:text="Just fill in desire phone number and message, and you will redirect to the conversation."
+        android:text="Just fill in a desired phone number and a message, and you will be redirected to a WhatsApp conversation."
         android:textColor="@color/colorBlack"
         android:textSize="8pt"
         android:layout_width="300dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="18dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="250dp"
-        android:textAlignment="center"/>
+        android:layout_marginTop="230dp"
+        />
 
     <TextView
-        android:text="Attention: WhatsApp application must be installed on the device and cannot be replaced by this app"
+        android:text="Attention: WhatsApp application must be installed on the device and cannot be replaced by this app."
         android:textColor="@color/colorBlack"
         android:textSize="8pt"
         android:layout_width="300dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="18dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="350dp"
-        android:textAlignment="center"/>
+
+        android:layout_marginTop="310dp"
+/>
 
     <TextView
         android:text="Created by Chen Arviv and Nitzan Shpigel"
