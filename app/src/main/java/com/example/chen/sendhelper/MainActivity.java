@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
         boolean check = false;
         if (phone == null || phone.equals("")) return false;
         if (!Pattern.matches("[a-zA-Z]+", phone)) {
-            if (phone.length() != 10 && phone.charAt(0) != '0') {
+            if (phone.charAt(0)!= '0' || phone.length() != 10) {
                 check = false;
                 Toast.makeText(getApplicationContext(), "This is not a valid number", Toast.LENGTH_SHORT).show();
             } else {
