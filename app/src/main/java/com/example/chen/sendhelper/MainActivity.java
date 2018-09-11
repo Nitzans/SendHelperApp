@@ -34,6 +34,25 @@ public class MainActivity extends AppCompatActivity {
                 }
         });
 
+        final Button clearNum = findViewById(R.id.clear_num);
+        final Button clearMsg = findViewById(R.id.clear_msg);
+
+        clearNum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Clear the second EditText
+                phoneEditText.getText().clear();
+            }
+        });
+        clearMsg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Clear the second EditText
+                messageEditText.getText().clear();
+            }
+        });
+
+
         final Button sendButton = findViewById(R.id.button_id);
         sendButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

@@ -54,11 +54,11 @@
         android:background="@drawable/rounded_edit_text"
         android:textCursorDrawable="@color/colorPrimary"
         android:gravity="left"
-        android:paddingStart="5dp"
-        android:paddingRight="8dp"
+        android:paddingStart="10dp"
+        android:paddingRight="20dp"
         android:paddingLeft="8dp"
         android:alpha="0.8"
-        android:layout_width="150dp"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="15dp"
         android:layout_marginStart="15dp"
@@ -69,10 +69,23 @@
         android:textColor="@color/colorBlack"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.169" />
+
+    <Button
+        android:id="@+id/clear_num"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/x"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/phoneEditText"
+        app:layout_constraintBottom_toBottomOf="@id/phoneEditText"
+        app:layout_constraintTop_toTopOf="@id/phoneEditText"
+        android:layout_marginLeft="3dp"
+        />
 
     <TextView
         android:id="@+id/messageTitle"
@@ -94,8 +107,8 @@
         android:background="@drawable/rounded_edit_text"
         android:textCursorDrawable="@color/colorPrimary"
         android:alpha="0.8"
-        android:paddingStart="8dp"
-        android:paddingRight="8dp"
+        android:paddingStart="6dp"
+        android:paddingRight="10dp"
         android:paddingLeft="8dp"
         android:paddingTop="5dp"
         android:paddingEnd="6dp"
@@ -108,7 +121,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintVertical_bias="0.53" />
+
+    <Button
+        android:id="@+id/clear_msg"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/x"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/messageEditText"
+        app:layout_constraintBottom_toBottomOf="@id/messageEditText"
+        app:layout_constraintTop_toTopOf="@id/messageEditText"
+        android:layout_marginLeft="3dp"
+        />
 
     <Spinner
         android:id="@+id/spinner"
